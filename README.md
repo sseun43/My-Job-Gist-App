@@ -6,4 +6,5 @@
  * User can search for jobs posted this week
  * User can search for jobs based on key words
  * User can search for jobs based on location
+ * Track users keys press and change background-color so that the user can see the jobs he/she already checked
  
