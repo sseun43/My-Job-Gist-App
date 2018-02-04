@@ -99,7 +99,17 @@ class App extends Component {
       <div className="col sm-4">
         <div className="form-group">
             <label htmlFor="paperInputs2">Search Job</label>
-            <input className="input-block" type="text" id="paperInputs2" ref="jobInput"/>
+            <input 
+            className="input-block"
+            type="text" id="paperInputs2" 
+            ref="jobInput"
+            onKeyPress={(ev)=>{if (ev.key === 'Enter') {
+              ev.preventDefault(); 
+              this.fetchDuunitoriData(false,false);
+              }
+            } 
+          }
+            />
         </div>
     </div>
       <div className="col sm-4">
